@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Dev</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="preloader">
+
+        <img src="{{url_for('static', filename='Resources/rocket.gif')}}">
+
+    </div>
+
+
+   
+     <!-- 
+    <div class="vericalOnly vanish">
+        <h1>You cant access my website in lanscape mode</h1>
+        <img src="{{url_for('static',filename='Resources/landscape.jpg')}}" class="onlyImg">
+    </div>-->
+    <!--<div id="waveform"></div>-->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a id="home-link" class="nav-link">
+                    <span class="link-text logo-text">Rakesh</span>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+                        <g class="fa-group">
+                            <path fill="currentColor"
+                                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                                class="fa-secondary"></path>
+                            <path fill="currentColor"
+                                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                                class="fa-primary"></path>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            
+
+            <li class="nav-item">
+                <a id="about-link" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                        <path
+                            d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/>
+                    </svg>
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="skills-link" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                        <!-- Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M160 352h192V160H160V352zM448 176h48C504.8 176 512 168.8 512 160s-7.162-16-16-16H448V128c0-35.35-28.65-64-64-64h-16V16C368 7.164 360.8 0 352 0c-8.836 0-16 7.164-16 16V64h-64V16C272 7.164 264.8 0 256 0C247.2 0 240 7.164 240 16V64h-64V16C176 7.164 168.8 0 160 0C151.2 0 144 7.164 144 16V64H128C92.65 64 64 92.65 64 128v16H16C7.164 144 0 151.2 0 160s7.164 16 16 16H64v64H16C7.164 240 0 247.2 0 256s7.164 16 16 16H64v64H16C7.164 336 0 343.2 0 352s7.164 16 16 16H64V384c0 35.35 28.65 64 64 64h16v48C144 504.8 151.2 512 160 512c8.838 0 16-7.164 16-16V448h64v48c0 8.836 7.164 16 16 16c8.838 0 16-7.164 16-16V448h64v48c0 8.836 7.164 16 16 16c8.838 0 16-7.164 16-16V448H384c35.35 0 64-28.65 64-64v-16h48c8.838 0 16-7.164 16-16s-7.162-16-16-16H448v-64h48C504.8 272 512 264.8 512 256s-7.162-16-16-16H448V176zM384 368c0 8.836-7.162 16-16 16h-224C135.2 384 128 376.8 128 368v-224C128 135.2 135.2 128 144 128h224C376.8 128 384 135.2 384 144V368z"  class="contacts_btn"/>
+                    </svg>
+                    <span class="link-text">Skills</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a id="projects-link" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
+                        <!-- Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+    <path d="M0 80C0 53.49 21.49 32 48 32H144C170.5 32 192 53.49 192 80V96H384V80C384 53.49 405.5 32 432 32H528C554.5 32 576 53.49 576 80V176C576 202.5 554.5 224 528 224H432C405.5 224 384 202.5 384 176V160H192V176C192 177.7 191.9 179.4 191.7 180.1L272 288H368C394.5 288 416 309.5 416 336V432C416 458.5 394.5 480 368 480H272C245.5 480 224 458.5 224 432V336C224 334.3 224.1 332.6 224.3 331L144 224H48C21.49 224 0 202.5 0 176V80z"
+    />
+    </svg>
+                    <span class="link-text">Projects</span>
+                </a>
+            </li>
+
+            
+
+            <li class="nav-item">
+                <a id="contacts-link" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                        <path
+                            d="M216 104C202.8 104 192 114.8 192 128s10.75 24 24 24c79.41 0 144 64.59 144 144C360 309.3 370.8 320 384 320s24-10.75 24-24C408 190.1 321.9 104 216 104zM224 0C206.3 0 192 14.31 192 32s14.33 32 32 32c123.5 0 224 100.5 224 224c0 17.69 14.33 32 32 32s32-14.31 32-32C512 129.2 382.8 0 224 0zM188.9 346l27.37-27.37c2.625 .625 5.059 1.506 7.809 1.506c17.75 0 31.99-14.26 31.99-32c0-17.62-14.24-32.01-31.99-32.01c-17.62 0-31.99 14.38-31.99 32.01c0 2.875 .8099 5.25 1.56 7.875L166.2 323.4L49.37 206.5c-7.25-7.25-20.12-6-24.1 3c-41.75 77.88-29.88 176.7 35.75 242.4c65.62 65.62 164.6 77.5 242.4 35.75c9.125-5 10.38-17.75 3-25L188.9 346z" />
+                    </svg>
+                    <span class="link-text">Contacts</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            
+            <section id="home" class="home">
+                <div class="title">
+                 <h1>I,m Rakesh</h1>
+
+                            <h2>I am a Student to 
+                             gain knowledge<br>
+                                and experince</h2>
+                </div>
+                <br>
+                <br>
+            <div class="picture">
+                <div class="particle ">
+                    <img src="{{url_for('static', filename='Resources/profile.png')}}" class="profile_pic " />
+                    <img src="{{url_for('static', filename='Resources/shape_1.png')}}" class="base ">
+                </div>
+            </div>
+        </section>
+    
+
+        <section class="about" id="about">
+            <h1>About Me<br></h1>
+            <div class="about-container">
+
+
+            <div class="hud">
+                <img src="{{url_for('static',filename='Resources/scan.gif')}}" class="human">
+                <img src="{{url_for('static',filename='Resources/hud_ring.png')}}" class="hub">
+                <img src="{{url_for('static',filename='Resources/hud_in.png')}}" class="hub-ring">
+
+            </div>
+
+            <div class="about-details">
+                <ul>
+                    
+                    <li>Name:RAKESH S D</li>
+                    <li>Nick name:ROCKY</li>
+                    <li>Planet:EARTH</li>
+                    <li>Qualification:12TH</li>
+                    <li>Age:17 Years</li>
+                    <li>Species:HUMAN</li>
+                    <li>Favorites:TECHS</li>
+                    <li>Hobby: CREATIVE</li>
+                </ul>
+            </div>
+
+            </div>   
+        </section>
+        <section class="skills" id="skills">
+            <h1>Skill Set</h1>
+            <div class="skill-container">
+                <ul class="cont">
+                    
+            {% for data in Sdatas %}
+                    <li>
+                        <div class="card-skill">
+                                <div class="progress">
+                                    <div class="progress-body">
+                                      <div class="progress-fill-{{data['skill']}}"></div>
+                                      <div class="progress-cover-{{data['skill']}}"></div>
+                                    </div>
+                                  </div>
+                      
+                            <div class="skill-info">
+                                <h2>{{data["skill"]}}</h2>
+                                
+                                <br>
+                                
+                            </div>
+                            <p>{{data["description"]}} 
+                            </p>
+                        </div>
+                    </li>
+                {%endfor%}
+               
+                </ul>
+
+            </div>
+        </section>
+        <section class="projects " id="projects">
+            <h1>Projects</h1>
+            <div class="project-display-container">
+                <ul>
+                    {% for i in Pdatas %}
+                    <li>
+                      
+                        <div class="project-code">
+                            <div class="links">
+                    
+                            <a href="{{i['link']}}" class="open-code-{{i['id']}}" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    code
+                                    </span>
+                            </a>
+                            </div>
+                            <img  src="{{url_for('static',filename='Resources/defaultGithub.jpg')}}" class="img-grp" id="{{i['file']}}">
+                          
+                            </a>
+                            <div class="project-content">
+                                <h3 id="text-{{i['id']}}" class="texted"></h3>
+                                <P>{{i['description']}}</P>
+                                <button class="Open-project-{{i['id']}}">Show Project !</button>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+        
+            <h1>CONTACT ME</h1>
+            <div class="contact-form">
+                <form class="forms" method="post" action="sendMail">
+                  <!--<div class="username">
+                    <input type="text" placeholder="UserName" name="username">
+                  </div>-->
+                  <div class="email">
+                    <input type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="message">
+                    <textarea placeholder="Message.." name="msg"></textarea>
+                    </div>
+                  
+                    <button class="send" onclick="clickin();">Send Signal <span class="material-symbols-outlined">podcasts</span></button>
+                </form>
+                
+            </div>
+            
+            <div class="antenna" id="signal">
+                <div class="top">
+                    <div class="ant-left"></div>
+                    <div class="center-reciever">
+                        <div class="signal-wave" id="signal-wave">
+                        </div>
+                    </div>
+                    <div class="ant-right"></div>
+                </div>
+                <div class="stand">
+                </div>
+                <div class="ant-base"></div>
+            </div>
+        </section>
+    </div>
+    </main>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="{{url_for('static', filename='anime.min.js')}}"></script>
+<script src="{{url_for('static', filename='app.js')}}"></script>
+
+
+
+</html>

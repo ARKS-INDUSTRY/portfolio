@@ -1,0 +1,75 @@
+*{
+margin: 0px;
+padding: 0%;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@font-face{
+    font-family: "Quantum";
+    src: url("fonts\\Quantum.ttf");
+}
+
+@font-face {
+    font-family: "Ron";
+    src: url("fonts\\RON.ttf");
+}
+
+
+.Thanku-card{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    flex-direction: column;
+    margin-top:100px ;
+    
+}
+
+
+.Thanku-card h1{
+    font-size: 30px;
+    font-family: "Quantum";
+    color:#4fdfb5;
+}
+
+.Thanku-card p{
+    font-size: 30px;
+    font-family: "Ron";
+    margin: 10px;
+    color: #000;
+}
+
+
+.thankimg{
+    width: 300px;
+    height: auto;
+}
+
+.get-back{
+    background-color: #4fdfb5;
+    color: #ececec;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    text-anchor: middle;
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.get-back:hover{
+    background-color: #ff049f;
+    
+}

@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+    overflow: hidden;
+}
+
+
+@font-face { 
+    font-family: "Android"; 
+    src: url("fonts\\Android.ttf");
+}
+
+@font-face{
+    font-family: "Quantum";
+    src: url("fonts\\Quantum.ttf");
+}
+
+@font-face {
+    font-family: "Space";
+    src: url("fonts\\Space.otf");
+}
+
+
+@font-face {
+    font-family: "MiddleEarth";
+    src: url("fonts\\Middleearth.ttf");
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text-contatent{
+    text-align: center;
+}
+
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 35%;
+    height: auto;
+  
+}
+
+h1 {
+    font-family: 'Quantum','Oxygen Mono', monospace;
+    color: #4fdfb5;
+    font-size: 75px;
+    margin-top: 2rem;
+
+}
+
+p{
+    color:black;
+    font-family: 'MiddleEarth';
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 90%;
+    }
+}
